@@ -7,8 +7,8 @@ rec {
       type = lib.types.bool;
       default = categoryCfg.enable && (!needsGui || guiCfg.enable);
       defaultText = lib.literalExpression (
-        "config.myConfig.${category}.enable"
-        + lib.optionalString needsGui " && config.myConfig.gui.enable"
+        "config.ryeConfig.${category}.enable"
+        + lib.optionalString needsGui " && config.ryeConfig.gui.enable"
       );
       example = false;
       inherit description;

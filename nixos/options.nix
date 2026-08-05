@@ -1,6 +1,6 @@
 { lib, ... }:
 {
-  options.myConfig = {
+  options.ryeConfig = {
     gui.enable = lib.mkEnableOption "graphical applications" // { default = true; };
 
     users = lib.mkOption {
